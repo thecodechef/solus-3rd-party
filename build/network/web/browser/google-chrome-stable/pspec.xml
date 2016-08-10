@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE PISI SYSTEM "https://solus-project.com/standard/pisi-spec.dtd">
+<PISI>
+  <Source>
+    <Name>google-chrome-stable</Name>
+    <Homepage>http://google.com/chrome</Homepage>
+    <Packager>
+      <Name>Automated Packaging</Name>
+      <Email>noreply@solus-project.com</Email>
+    </Packager>
+    <Summary>The web browser from Google</Summary>
+    <Description>Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
+    <License>EULA</License>
+    <Archive sha1sum="842aca9c75ae39a0c3afe5362cc71488bc6c8691" type="binary">http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_52.0.2743.116-1_amd64.deb</Archive>
+    <BuildDependencies>
+      <Dependency>libxscrnsaver</Dependency>
+      <Dependency>gconf</Dependency>
+      <Dependency>binutils</Dependency>
+    </BuildDependencies>
+  </Source>
+  <Package>
+    <RuntimeDependencies>
+      <Dependency>libxscrnsaver</Dependency>
+      <Dependency>gconf</Dependency>
+    </RuntimeDependencies>
+    <Name>google-chrome-stable</Name>
+    <Icon>google-chrome</Icon>
+    <Files>
+      <Path fileType="executable">/usr/bin</Path>
+      <Path fileType="data">/usr/share/applications</Path>
+      <Path fileType="doc">/usr/share/doc</Path>
+      <Path fileType="man">/usr/share/man</Path>
+      <Path fileType="data">/usr/share/gnome-control-center</Path>
+      <Path fileType="data">/usr/share/menu</Path>
+      <Path fileType="executable">/opt/google/chrome</Path>
+    </Files>
+  </Package>
+  <History>
+    <Update release="70">
+      <Date>08-04-2016</Date>
+      <Version>52.0.2743.116</Version>
+      <Comment>Update to 52.0.2743.116</Comment>
+      <Name>Joshua Strobl</Name>
+      <Email>joshua@stroblindustries.com</Email>
+    </Update>
+  </History>
+</PISI>

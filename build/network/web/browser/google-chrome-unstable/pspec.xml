@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE PISI SYSTEM "https://solus-project.com/standard/pisi-spec.dtd">
+<PISI>
+  <Source>
+    <Name>google-chrome-unstable</Name>
+    <Homepage>http://google.com/chrome</Homepage>
+    <Packager>
+      <Name>Automated Packaging</Name>
+      <Email>noreply@solus-project.com</Email>
+    </Packager>
+    <Summary>The web browser from Google</Summary>
+    <Description>Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
+    <License>EULA</License>
+    <Archive sha1sum="7dc074c055961e4b28dbddb34e7658f2780f185c" type="binary">http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_54.0.2816.0-1_amd64.deb</Archive>
+    <BuildDependencies>
+      <Dependency>libxscrnsaver</Dependency>
+      <Dependency>gconf</Dependency>
+      <Dependency>binutils</Dependency>
+    </BuildDependencies>
+  </Source>
+  <Package>
+    <RuntimeDependencies>
+      <Dependency>libxscrnsaver</Dependency>
+      <Dependency>gconf</Dependency>
+    </RuntimeDependencies>
+    <Name>google-chrome-unstable</Name>
+    <Icon>google-chrome</Icon>
+    <Files>
+      <Path fileType="executable">/usr/bin</Path>
+      <Path fileType="data">/usr/share/applications</Path>
+      <Path fileType="doc">/usr/share/doc</Path>
+      <Path fileType="man">/usr/share/man</Path>
+      <Path fileType="data">/usr/share/gnome-control-center</Path>
+      <Path fileType="data">/usr/share/menu</Path>
+      <Path fileType="executable">/opt/google/chrome-unstable</Path>
+    </Files>
+  </Package>
+  <History>
+    <Update release="50">
+      <Date>08-03-2016</Date>
+      <Version>54.0.2816.0</Version>
+      <Comment>Update to 54.0.2816.0</Comment>
+      <Name>Joshua Strobl</Name>
+      <Email>joshua@stroblindustries.com</Email>
+    </Update>
+  </History>
+</PISI>

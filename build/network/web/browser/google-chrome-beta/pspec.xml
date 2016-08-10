@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE PISI SYSTEM "https://solus-project.com/standard/pisi-spec.dtd">
+<PISI>
+  <Source>
+    <Name>google-chrome-beta</Name>
+    <Homepage>http://google.com/chrome</Homepage>
+    <Packager>
+      <Name>Automated Packaging</Name>
+      <Email>noreply@solus-project.com</Email>
+    </Packager>
+    <Summary>The web browser from Google</Summary>
+    <Description>Google Chrome is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier.</Description>
+    <License>EULA</License>
+    <Archive sha1sum="2292cb141ea436195dbc1ce31ff42949c20c46fd" type="binary">http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-beta/google-chrome-beta_53.0.2785.46-1_amd64.deb</Archive>
+    <BuildDependencies>
+      <Dependency>libxscrnsaver</Dependency>
+      <Dependency>gconf</Dependency>
+      <Dependency>binutils</Dependency>
+    </BuildDependencies>
+  </Source>
+  <Package>
+    <RuntimeDependencies>
+      <Dependency>libxscrnsaver</Dependency>
+      <Dependency>gconf</Dependency>
+    </RuntimeDependencies>
+    <Name>google-chrome-beta</Name>
+    <Icon>google-chrome</Icon>
+    <Files>
+      <Path fileType="executable">/usr/bin</Path>
+      <Path fileType="data">/usr/share/applications</Path>
+      <Path fileType="doc">/usr/share/doc</Path>
+      <Path fileType="man">/usr/share/man</Path>
+      <Path fileType="data">/usr/share/gnome-control-center</Path>
+      <Path fileType="data">/usr/share/menu</Path>
+      <Path fileType="executable">/opt/google/chrome-beta</Path>
+    </Files>
+  </Package>
+  <History>
+    <Update release="67">
+      <Date>08-05-2016</Date>
+      <Version>53.0.2785.46</Version>
+      <Comment>Update to 53.0.2785.46</Comment>
+      <Name>Joshua Strobl</Name>
+      <Email>joshua@stroblindustries.com</Email>
+    </Update>
+  </History>
+</PISI>
