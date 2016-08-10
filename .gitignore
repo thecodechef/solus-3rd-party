@@ -1,0 +1,6 @@
+# Folders to exclude
+apps/
+includes/
+
+# Files to exclude
+Makefile
